@@ -1,4 +1,4 @@
-package no.hvl.dat110.middleware;
+	package no.hvl.dat110.middleware;
 
 import java.math.BigInteger;
 import java.rmi.RemoteException;
@@ -167,7 +167,6 @@ public class Node extends UnicastRemoteObject implements NodeInterface {
 	@Override
 	public void saveFileContent(String filename, BigInteger fileID, byte[] bytesOfFile, boolean primary) throws RemoteException {
 		updater.saveFileContent(filename, fileID, bytesOfFile, primary);
-		
 	}
 	
 	/** Remote-write */
